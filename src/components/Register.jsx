@@ -6,7 +6,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const MAIL_REGEX = /^[A-Za-z0-9]+@mgits\.ac\.in$/;
+const MAIL_REGEX = /^([0-9]{12}\.|[A-Za-z0-9._%+-]+)@gdgu\.org$/;
+// const MAIL_REGEX = /^[0-9]{12}\.[A-Za-z0-9]+@gdgu\.org$/;
+// const MAIL_REGEX = /^[A-Za-z0-9]\.[A-Za-z0-9]+gdgu\.org$/;
 const REGISTER_URL = '/register';
 
 const Register = () => {
