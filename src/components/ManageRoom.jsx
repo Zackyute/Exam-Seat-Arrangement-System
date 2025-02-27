@@ -155,8 +155,8 @@ export default function ManageRoom() {
                 <h2 className="text-xl font-Outfit-Bold mb-3">ADD ROOM</h2>
                 <form ref={formRef} className="flex hw:flex-col flex-row justify-between" onSubmit={handleRoom}>
                     <Input input_id="room-no" title="Room No" inputRef={roomNoRef} type="text" placeholder="M101" required />
-                    <DropDownInput id="branch" title="Floor No" inputRef={floorNoRef} options={['1', '2', '3', '4', '5']} required />
-                    <DropDownInput id="slot" title="Block" inputRef={blockRef} options={['M-George', 'Ramanujan']} required />
+                    <DropDownInput id="branch" title="Floor No" inputRef={floorNoRef} options={['0','1', '2', '3', '4']} required />
+                    <DropDownInput id="slot" title="Block" inputRef={blockRef} options={['Block A', 'Block B']} required />
                     <Input input_id="total-seats" title="Available Seats" inputRef={capacityRef} type="text" placeholder="30" required />
                     <button className="bg-blue-500 hover:bg-blue-400 text-white font-Outfit-Bold py-1 px-2 my-7 mx-2 h-10 w-[5rem] rounded-[20px]" type="submit">ADD</button>
                 </form>
@@ -200,15 +200,14 @@ export default function ManageRoom() {
                             <p className="ml-2 mr-1 whitespace-nowrap">Filter By :</p>
                             <select className="w-full p-[10.4px] m-1 mr-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-login text-gray-600"
                                 defaultValue="nil" onChange={(e) => setFilterTerm(e.target.value)}>
-                                <option value="nil" >-</option>
-                                <option value="Ramanujan">Ramanujan Block</option>
-                                <option value="M-George">M-George Block</option>
+                                <option value="nil" > - </option>
+                                <option value="M-George"> </option>
+                                <option value="Ramanujan">Block B</option>
                                 <option value="0">Ground Floor</option>
                                 <option value="1">First Floor</option>
                                 <option value="2">Second Floor</option>
                                 <option value="3">Third Floor</option>
                                 <option value="4">Fourth Floor</option>
-                                <option value="5">Fifth Floor</option>
                             </select>
                         </div>
                     </div>

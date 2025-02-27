@@ -172,7 +172,7 @@ const Register = () => {
                             />
                             <p id="mailnote" className={mailFocus && mail && !validMail ? "text-xs rounded-lg bg-red-200 text-red-600 p-1 mt-[5px] " : "absolute left-[-9999px]"}>
                                 <FontAwesomeIcon icon={faInfoCircle} className="mr-1 text-red-600" />
-                                Use mgits mail id.(lowercase)
+                                Use gdgu mail id.(lowercase)
                             </p>
                         </div>
 
